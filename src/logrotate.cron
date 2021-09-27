@@ -1,0 +1,2 @@
+# 每天 00:00 运行一次 logrotate 命令
+0 0 * * * /usr/sbin/logrotate -s /tmp/logrotate.status /opt/storage_gateway2/src/sgw.log.conf

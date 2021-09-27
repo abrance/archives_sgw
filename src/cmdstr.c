@@ -1,0 +1,90 @@
+#include "mt_log.h"
+#include "public.h"
+
+const char * command_string(uint32_t c)
+{
+    switch (c) {
+    case CMD_HEARTBEART_REQ:
+        return "CMD_HEARTBEART_REQ";
+    case CMD_HEARTBEART_RSP:
+        return "CMD_HEARTBEART_RSP";
+    case CMD_START_UPLOAD_REQ:
+        return "CMD_START_UPLOAD_REQ";
+    case CMD_START_UPLOAD_RSP:
+        return "CMD_START_UPLOAD_RSP";
+    case CMD_UPLOAD_DATA_REQ:
+        return "CMD_UPLOAD_DATA_REQ";
+    case CMD_UPLOAD_DATA_RSP:
+        return "CMD_UPLOAD_DATA_RSP";
+    case CMD_UPLOAD_FINISH_REQ:
+        return "CMD_UPLOAD_FINISH_REQ";
+    case CMD_UPLOAD_FINISH_RSP:
+        return "CMD_UPLOAD_FINISH_RSP";
+    case CMD_START_DOWNLOAD_REQ:
+        return "CMD_START_DOWNLOAD_REQ";
+    case CMD_START_DOWNLOAD_RSP:
+        return "CMD_START_DOWNLOAD_RSP";
+    case CMD_DOWNLOAD_DATA_REQ:
+        return "CMD_DOWNLOAD_DATA_REQ";
+    case CMD_DOWNLOAD_DATA_RSP:
+        return "CMD_DOWNLOAD_DATA_RSP";
+    case CMD_DOWNLOAD_FINISH_REQ:
+        return "CMD_DOWNLOAD_FINISH_REQ";
+    case CMD_DOWNLOAD_FINISH_RSP:
+        return "CMD_DOWNLOAD_FINISH_RSP";
+    case CMD_DELETE_REQ:
+        return "CMD_DELETE_REQ";
+    case CMD_DELETE_RSP:
+        return "CMD_DELETE_RSP";
+    case CMD_GET_FILE_LIST_REQ:
+        return "CMD_GET_FILE_LIST_REQ";
+    case CMD_GET_FILE_LIST_RSP:
+        return "CMD_GET_FILE_LIST_RSP";
+    case CMD_SEQ_DOWNLOAD_REQ:
+        return "CMD_SEQ_DOWNLOAD_REQ";
+    case CMD_SEQ_DOWNLOAD_RSP:
+        return "CMD_SEQ_DOWNLOAD_RSP";
+    case CMD_BK_START_UPDATE_REQ:
+        return "CMD_BK_START_UPDATE_REQ";
+    case CMD_BK_START_UPDATE_RSP:
+        return "CMD_BK_START_UPDATE_RSP";
+    case CMD_BK_DELETE_REQ:
+        return "CMD_BK_DELETE_REQ";
+    case CMD_BK_DELETE_RSP:
+        return "CMD_BK_DELETE_RSP";
+    case CMD_BK_FILE_CRUSH_REQ:
+        return "CMD_BK_FILE_CRUSH_REQ";
+    case CMD_BK_FILE_CRUSH_RRP:
+        return "CMD_BK_FILE_CRUSH_RRP";
+    case CMD_BK_RENAME_REQ:
+        return "CMD_BK_RENAME_REQ";
+    case CMD_BK_RENAME_RSP:
+        return "CMD_BK_RENAME_RSP";
+    case CMD_BK_DIR_DELETE_REQ:
+        return "CMD_BK_DIR_DELETE_REQ";
+    case CMD_BK_DIR_DELETE_RSP:
+        return "CMD_BK_DIR_DELETE_RSP";
+    case CMD_BK_DIR_RENAME_REQ:
+        return "CMD_BK_DIR_RENAME_REQ";
+    case CMD_BK_DIR_RENAME_RSP:
+        return "CMD_BK_DIR_RENAME_RSP";
+    case CMD_MIGRATION_START_REQ:
+        return "CMD_MIGRATION_START_REQ";
+    case CMD_MIGRATION_START_RSP:
+        return "CMD_MIGRATION_START_RSP";
+    case CMD_MIGRATION_STOP_REQ:
+        return "CMD_MIGRATION_STOP_REQ";
+    case CMD_MIGRATION_STOP_RSP:
+        return "CMD_MIGRATION_STOP_RSP";
+    case CMD_MIGRATION_FINISHED_REQ:
+        return "CMD_MIGRATION_FINISHED_REQ";
+    case CMD_MIGRATION_FINISHED_RSP:
+        return "CMD_MIGRATION_FINISHED_RSP";
+    case CMD_MIGRATION_CANCEL_REQ:
+        return "CMD_MIGRATION_CANCEL_REQ";
+    case CMD_MIGRATION_CANCEL_RSP:
+        return "CMD_MIGRATION_CANCEL_RSP";
+    default:
+        return "UNKNOWN";
+    }
+}
